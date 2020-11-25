@@ -1,2 +1,3 @@
-# C_noob
-Noob stuff in C language
+Noob stuff in C language...
+
+Dev C++ 5.11 - GCC 4.9.2
