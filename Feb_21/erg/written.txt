@@ -1,0 +1,4 @@
+ 123   Antoniou     Antonios      3    6.0    8.0   10.0    4.0    8.0	    7.20
+  25   Basiliou     Basileios     3    3.8    5.7    4.2    6.0    8.3	    5.60
+  10   Dimitriou    Dimitrios    10    8.0    7.0    9.0    6.0    5.5	    7.10
+   7   Georgiou     Georgios      4    9.0    9.0   10.0    6.0    8.0	    8.40
