@@ -1,0 +1,27 @@
+read -p "Give a file name:" fname
+if [ ! -f $fname ]
+then
+ echo file does not exist
+else
+ num=$(cat $fname | wc -l)
+ if [ $num -le 1 ]
+ then
+  echo the file has too few lines
+ else
+  let half=num/2
+  read -p "What part do you want to print?(u)pper or (l)ower?" ans
+  case $ans in
+  u)
+    head -$half $fname
+  ;;
+  l)
+    tail -$half $fname
+  ;;
+  *)
+   echo Wrong choice, cannot print
+  ;;
+  esac
+ fi
+fi
+
+

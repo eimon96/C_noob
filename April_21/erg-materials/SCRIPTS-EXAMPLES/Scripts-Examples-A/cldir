@@ -1,0 +1,3 @@
+t=$(date +%F)
+mkdir $t
+find . -maxdepth 1 -type f -exec mv {} $t \;

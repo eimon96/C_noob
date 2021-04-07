@@ -1,0 +1,17 @@
+echo ENTER THE NUMBER OF ARRAY ELEMENTS:
+read n
+echo Give the $n elements:   
+i=0
+while [ $i -lt $n ]
+do 
+   read a[$i]
+   let i=$i+1
+done
+
+echo THE ELEMENTS OF THE ARRAY ARE THE FOLLOWING:
+i=0
+while [ $i -lt $n ]
+do 
+   echo ${a[i]}
+   let i=$i+1
+done

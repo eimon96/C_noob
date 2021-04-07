@@ -1,0 +1,11 @@
+uc=1
+t2=0
+while [ $uc -eq 1 ]
+do 
+  read -p 'Give the directory you want to search: ' kat1
+  t1=$(find $kat1 -maxdepth 1 -type f -mtime -$1 | wc -l) 
+  let t2=$t2+$t1
+  echo $t1 files were modified the last $1 days in directory $kat1 
+  read -p 'Do you want to continue ? (0/1): ' uc
+done
+echo $t2 files were modified the last $1 days in all directories

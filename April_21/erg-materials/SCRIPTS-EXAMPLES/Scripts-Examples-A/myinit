@@ -1,0 +1,4 @@
+who | wc -l
+ps au | wc -l
+ps aux | grep "^root" | wc -l
+find ~ -type f -mtime -1 

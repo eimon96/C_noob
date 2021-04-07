@@ -1,0 +1,7 @@
+echo This program computes the product of two integers
+sleep 2
+read -p 'Give the first number: ' a1
+read -p 'Give the second number: ' a2
+sleep 2
+let sum=a1*a2
+echo The product is: $sum

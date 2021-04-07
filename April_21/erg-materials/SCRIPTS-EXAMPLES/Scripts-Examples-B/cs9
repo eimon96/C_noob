@@ -1,0 +1,24 @@
+i=1
+cd ~
+for item in *
+do
+ echo Item $((i++)) : $item
+done
+
+i=1
+for file in /etc/[abcd]*.conf
+do
+ echo File $((i++)) : $file
+done
+
+i=1
+for file in $(ls /etc/[abcd]*.conf)
+do
+ echo File $((i++)) : $file
+done
+
+i=1
+for file in $(find -maxdepth 1 -type d)
+do
+ echo File $((i++)) : $file
+done

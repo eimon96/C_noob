@@ -1,0 +1,27 @@
+# PARADEIGMATA XRHSHS FUNCTIONS/PROCEDURES SE SHELL SCRIPTS
+# PARADEIGMA APLHS KLHSHS 
+fnHelloWorld()
+{
+        echo Hello World
+}
+ 
+fnHelloWorld
+
+# PARADEIGMA KLHSHS ME PARAMETROYS
+fnArgumentFunction()
+{
+        echo Argument 1: $1
+        echo Argument 2: $2
+}
+ 
+fnArgumentFunction Hello World
+
+# PARADEIGMA KLHSHS ME PARAMETROYS KAI EPISTROFHS APOTELESMATVN MESV ECHO
+fnReturnFunction()
+{
+        echo $1$2
+}
+
+value=$(fnReturnFunction holly wood)
+
+echo $value

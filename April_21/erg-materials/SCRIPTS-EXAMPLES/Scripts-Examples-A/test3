@@ -1,0 +1,6 @@
+read -p 'Give the first directory you want to search: ' kat1
+t1=$(find $kat1 -maxdepth 1 -type f -mtime -2 | wc -l) 
+read -p 'Give the second directory you want to search: ' kat2
+t2=$(find $kat2 -maxdepth 1 -type f -mtime -2 | wc -l) 
+let t3=$t1+$t2
+echo $t3 files were modified the last 2 days in directories $kat1 and $kat2 

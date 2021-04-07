@@ -1,0 +1,5 @@
+echo The files you requested are
+find $1 -maxdepth 1 -name "*a*" -type f | head -$2
+sleep 2 
+echo The directories you requested are
+find $1 -maxdepth 1 -name "*a*" -type d | head -$3

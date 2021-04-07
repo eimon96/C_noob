@@ -1,0 +1,21 @@
+# SCRIPT NUMBER 2 APO TO FYLLADIO
+args=2
+if [ $# -ne $args ]
+ then
+  echo Wrong number of arguments - Usage: $0 -l/k [username] 
+elif [ $(who |grep -w "^$2" |wc -l) -eq 0 ]
+ then
+ echo User $2 is not connected
+else
+ case $1 in
+  -l)
+    ps -u $2 
+  ;;
+  -k)
+    killall -u $2 
+  ;;
+  *) 
+    Lathos epilogh
+  ;;
+ esac
+fi

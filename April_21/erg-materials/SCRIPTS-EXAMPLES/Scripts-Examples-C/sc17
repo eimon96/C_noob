@@ -1,0 +1,19 @@
+# PARADEIGMA ANAGNVSHS ENOS ARXEIOY SE ENA SHELL SCRIPT GARMMH PROS GRAMMH
+# KAI PROSPELASHS EPISHS TVN STHLVN (LEJEVN KATHE GRAMMHS) TOY MIAS PROS MIAS
+# PROSOXH: Gia na trejei kaleste to vs ejhs: ./sc17 < myfile 
+# (an ypothesoyme oti thelete na diabasete to arxeio myfile)
+# ENALLAKTIKA: mporeite na topothetisete to '< myfile' mesa sto script
+# (sto telos toy WHILE LOOP - akribvs dejia apo to deytero done)
+
+a=0
+while read line
+do 
+a=$(($a+1))
+echo $a;
+echo $line;
+for t in $line
+do
+echo $t
+done
+done 
+echo Final line count is: $a

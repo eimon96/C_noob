@@ -1,0 +1,22 @@
+# PARADEIGMA XRHSHS FUNCTIONS ME PARAMETROUS KAI LOCAL VARIABLES KAI 
+# EPISHS EPISTROFH APOTELESMATVN MESV GLOBAL VARIABLES
+filecheck(){
+  local f=$1
+  if [ -f $f -a -x $f ] 
+    then
+      check=1
+  else
+      check=0
+  fi
+}
+
+for f in * 
+do
+filecheck $f
+if [ $check -eq 1 ]
+ then
+  echo File $f is Ok
+else
+  echo File $f is not Ok
+fi
+done

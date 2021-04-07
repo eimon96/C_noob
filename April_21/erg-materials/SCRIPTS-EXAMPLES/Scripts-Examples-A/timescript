@@ -1,0 +1,8 @@
+t1='ls -l | grep -w "$1:.."'
+eval $t1 > timefile
+t11=$(eval $t1 |wc -l) 
+t2='find . -maxdepth 1 -type f -mmin -$2 -ls'
+eval $t2 >> timefile 
+t22=$(eval $t2 |wc -l) 
+let t3=$t11+$t22
+echo $t3 

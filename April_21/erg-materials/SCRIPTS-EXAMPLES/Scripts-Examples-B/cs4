@@ -1,0 +1,17 @@
+echo FIRST TYPE: List of values 
+for num in 1 2 3 4 5 
+do
+ echo Number: $num
+done
+
+echo SECOND TYPE: Range of values
+for num in {6..10}
+do
+ echo Number: $num
+done
+
+echo THIRD TYPE: Range by step  
+for num in {2..10..2}
+do
+ echo Number: $num
+done

@@ -1,0 +1,9 @@
+# a nice script to monitor system info
+t1=$(who | wc -l)
+t2=$(wc -l /etc/passwd)
+t3=$(ls -l / | grep "^d" | wc -l)
+t4=$(ls -l /bin | grep "^-..x" |wc -l)
+echo There are $t1 users logged in at this moment
+echo There are $t2 lines in /etc/passwd file
+echo There are $t3 subdirs under the root directory
+echo There are $t4 executable files in /bin directory

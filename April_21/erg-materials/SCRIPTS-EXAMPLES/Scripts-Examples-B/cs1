@@ -1,0 +1,29 @@
+read -p "Dose epilogi(1-4):" ep
+case $ep in
+ 1)
+   let res=$1+$2
+   echo Apotelesma:$res
+  ;;
+ 2)
+   let res=$1-$2
+   echo Apotelesma:$res
+  ;;
+ 3)
+   let res=$1*$2
+   echo Apotelesma:$res
+  ;;
+ 4)
+   if [ $2 -eq 0 ]
+   then
+    echo Division with zero
+   else
+    let res=$1/$2
+    echo Apotelesma:$res
+   fi
+  ;;
+  *)
+   echo Lathos epilogh
+  ;;
+esac
+
+

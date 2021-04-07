@@ -1,0 +1,14 @@
+# SCRIPT NUMBER 1 APO TO FYLLADIO 
+args=1
+if [ $# -ne $args ]
+ then
+  echo Wrong number of arguments - Usage: $0 [username]
+elif [ $(who |grep -w "^$1" |wc -l) -eq 0 ]
+ then
+ echo User $1 is not connected
+else
+ for file in $(find /home/$1 -type f -perm 755 -mtime -7)
+  do
+    tar -Prvf $1.tar $file
+  done 
+fi

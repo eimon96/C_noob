@@ -1,0 +1,19 @@
+echo FOR LOOP with list of strings
+i=1
+for day in Mon Tue Wed Thu Fri
+do
+ echo "Weekday $((i++)) : $day"
+done
+
+echo ANOTHER more complex example
+i=1
+for day in Mon Tue Wed Thu Fri Sat Sun
+do
+ echo -n "Day $((i++)) : $day"
+ if [ $i -eq 7 -o $i -eq 8 ] 
+   then
+     echo " (WEEKEND)"
+ else 
+     echo " (weekday)"
+ fi
+done
