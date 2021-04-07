@@ -1,0 +1,19 @@
+pipe == |
+cat test.txt ex1.sh | wc	// to wc pernei ws input to output ths cat
+ctrl+D -> EOF
+
+grep <string> <where>
+cat test.txt ex1.sh | grep e | wc -l
+
+awk
+
+find
+find ./ -name "e*" 		// ./ == apo dw k katw
+find ./ -name 'e*' -exec ls -l {} \;
+find ./ -name '*.c' -exec grep if {} \;
+find ./ -name '*.c' -exec grep if {} \; | wc -l
+
+gcc ex3.c -o temp
+./temp				// execute
+
+gcc -pthread e_tick_tack.c -o tt		//!!!!!!!!!!!!!!!!!!!!!!!
