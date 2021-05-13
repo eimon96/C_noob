@@ -54,8 +54,10 @@ int main(int argc, char **argv)
         Data[i].From = i*(n/p);
         Data[i].To = Data[i].From + n/p - 1;
 		pthread_create(&thr[i], NULL, pfunc, &Data[i]);
-        pthread_join (thr[i], NULL);
 	}
+	
+	for (i = 0; i < p; i++)
+            pthread_join (thr[i], NULL);        
 
 	printf("Total sum: %d\n", total_sum);
 	return 0;
@@ -158,4 +160,3 @@ void mInit()
     }
     fclose(fp);
 }
-
