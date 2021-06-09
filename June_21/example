@@ -1,0 +1,7 @@
+#!/bin/bash
+
+xair=xD			# xwris kena!! alliws nmzei oti ekteleis entolh
+
+echo Hello $1 $2	# san na leme argv[0], argv[1]
+echo "Bye Bye" $xair
+

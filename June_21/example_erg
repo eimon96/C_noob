@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo dose xeretismo
+read xair
+
+if [ $# -ne 2 ]  
+then
+     echo Invalid number of parameters...
+     exit 2
+fi
+
+counter=1
+while [ $counter -le 5 ]
+do 
+   echo $counter
+   sleep 1
+   let counter=$counter+1
+done
+
+cont=y
+while [ $cont == y ]
+do
+     echo Mpla mpla mpla
+     date
+     echo press y to continue anything else to stop
+     read cont
+done
+
+co=`find $xair -name b* -type d | wc -l`
+echo Number of directories starting with b $co
+echo press enter to continue
+read tt
+find $xair -name b* -type d 2>/dev/null
+
+b=`ls -l | grep "r..r..r.. " | tr -s ' ' | cut -d " " -f 9 | wc -l` 
+echo Number of files $b
+ls -l | grep "r..r..r.. " | tr -s ' ' | cut -d " " -f 9 
+
+
+
+
+echo $xair $1 $2
+echo "Bye Bye"
+
+

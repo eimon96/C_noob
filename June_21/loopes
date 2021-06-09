@@ -1,0 +1,18 @@
+#!/bin/bash
+
+a=`ls`
+for i in $a
+do
+	echo $i
+done
+
+##################
+sleep 1
+
+counter=1
+while [ $counter -le 10 ]
+do
+	echo $counter
+	sleep 1
+	let counter=$counter+1
+done

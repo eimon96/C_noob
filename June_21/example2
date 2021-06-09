@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo dwse emoji
+read emoji
+
+echo eimon $emoji
+echo $#			# arithmos parametrwn -- san to argc
+
+if [ $# -eq 2 ]		# 0 == true kai o,ti allo == false !!!
+then			# -eq shmainei ==
+	echo "if"	# ta > < einai anakateuthunsh giauto de xrhsimopoiountai se prakseis
+else
+	echo "else"
+fi

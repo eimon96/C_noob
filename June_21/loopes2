@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cont=y
+while [ $cont == y ]
+do
+	echo Mpla Mpla Mplaaa
+	date
+	echo press y to continue anything else to stop 
+	read cont
+done

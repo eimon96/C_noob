@@ -1,0 +1,15 @@
+find /bin -type f| less
+
+find /bin -type f| wc -l
+
+find /bin -type d -name b*| wc -l
+
+ls -l | grep "r..r..r.."
+
+ls -l | grep "r..r..r.." | tr -s ' ' | cut -d " " -f 9
+
+ls -l /bin | grep "r..r..r.." | tr -s ' ' | cut -d " " -f 9 | wc -l
+
+ls -lR
+
+find . -pern 400
